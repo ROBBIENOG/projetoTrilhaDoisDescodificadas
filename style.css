@@ -2,8 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 
 /* Paleta de  Cores : #001b40 (Azul escuro), #e6b22d(Amarelo)  */
 
@@ -11,30 +12,70 @@ header{
     background-color: #001b40;
     display: flex;
     justify-content: space-between;
-    align-items:flex-end;
-    padding: 1rem;
+    align-items:center;
+    padding: .5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-nav ul{
-    display:flex;
+ul{
+    display: flex;
+    margin:0;
+    padding:0;
     list-style: none;
-      
+    overflow: hidden;
 }
 
-nav ul li a{
-    color:white;
+li{
+    float:left;
+}
+
+li a, .droplink {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    transition: color 0.2s;
 }
 
+li a:hover, .drop:hover .droplink{
+    background-color: #e6b22d;
+}
+
+li .drop{
+    display:inline-block;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown a {
+    color: #e6b22d;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown a:hover {
+    background-color: #f1f1f1;
+}
+
+.drop:hover .dropdown {
+    display: block;
+}
+  
 h1{
     padding: 1rem;
     text-align: center;
 }
 
-.Sobremim{
+.aboutMe{
     display: flex;
     justify-content: space-around;
     align-items:center;
