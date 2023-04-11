@@ -15,37 +15,74 @@
 <body>
      <!-- Cabeçalho -->
     <header>
-        <img src="" width="200" height="30"alt="Logo com o nome do advogado">
+        <img src="/images/Logo.png" width="150" height="150"alt="Logo com o nome do advogado">
         <nav>
             <ul>
-                <li><a href="#services">Serviços</a></li>
                 <li><a href="#aboutus">Sobre mim</a></li>
+                <li>
+                    <a href="#services">Serviços</a>
+                    <div class="subMenu1">
+                        <ul>
+                            <li><a href="">Lei Seca</a></li>
+                            <li><a href="">CNH</a></li>
+                        </ul>
+                    </div>
+                </li>
                 <li><a href="#testimony">Depoimentos</a></li>
                 <li><a href="#form">Contato</a></li>
-              </ul>
+            </ul>
         </nav>
     </header>
 
      <!-- Seção principal -->
-    <main>
+     <main>
+        <section class="Sobremim" id="#aboutus">
+            <div class="textAboutUs">
+                <h1>Sobre Mim</h1>
+                <p>Somos um escritório de advocacia especializado em casos de trânsito, com experiência e conhecimento para atuar nas mais diversas situações relacionadas a infrações, acidentes e multas de trânsito. Nosso principal objetivo é defender os direitos e interesses de nossos clientes, buscando sempre a melhor solução para cada caso.
+
+                    Contamos com uma equipe de advogados altamente qualificados e comprometidos com a excelência no atendimento aos clientes. Nosso trabalho é pautado na ética, na transparência e na busca constante pela atualização jurídica, para oferecer sempre as melhores estratégias de defesa.
+                    
+                    Atuamos em todas as esferas do direito de trânsito, seja na defesa de multas e penalidades administrativas, na revisão de processos de habilitação ou no acompanhamento de processos judiciais. Com uma abordagem personalizada e dedicada a cada cliente, buscamos sempre a melhor solução para cada caso, de forma ágil e eficiente.
+                    
+                    Entre em contato conosco para mais informações sobre nossos serviços e como podemos ajudá-lo em questões relacionadas ao direito de trânsito.
+                </p>
+            </div>
+            <div class="imageAboutUs">
+                <img src="/images/advogado.png" height="500px" width="500">
+            </div>
+        </section>
+
         <section id="#services">
+            <h2>Serviços</h2>
+            <div>
+                <h3>CNH</h3>
+            </div>
 
+            <div>
+                <h3>Lei Seca</h3>
+            </div>
+
+            <div>
+                <h3>Multas</h3>
+            </div>
+            <div>
+                <h3>Troca de Infrator</h3>
+            </div>
         </section>
 
-        <section id="#aboutus">
 
-        </section>
+        <!--<section id="#testimony">
 
-        <section id="#testimony">
+        </section>-->
 
-        </section>
+        <!--<section id="#video">
 
-        <section id="#video">
-
-        </section>
+        </section>-->
 
         <section id="#map">
-
+            <h2>Onde Estamos?</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.109527347067!2d-43.45124558560689!3d-22.761316238417354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x996711dd0ce49f%3A0xf2ade5a3d49448d0!2sR.%20Cel.%20Bernardino%20de%20Melo%20-%20Centro%2C%20Nova%20Igua%C3%A7u%20-%20RJ%2C%2026557-710!5e0!3m2!1spt-BR!2sbr!4v1681147540296!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
 
         <section id="#form">
@@ -66,7 +103,7 @@
 
      <!-- Rodapé -->
     <footer>
-        <p>Criado por Roberta Nogueira</p>
+        <p id=#textFooter>Criado por Roberta Nogueira</p>
     </footer>
     <script src="script.js"></script>
 </body>
