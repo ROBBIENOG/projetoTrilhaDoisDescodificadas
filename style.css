@@ -13,7 +13,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items:center;
-    padding: .5rem;
+    padding: 1px;;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
@@ -86,6 +86,37 @@ h1{
 p{
     text-align: justify;
 }
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.services{
+    background-color: #e6b22d;
+    width: 300px; 
+    height: 400px;
+    text-align: center;   
+    border-radius: 10px;
+}
+
+.services:hover{
+    background-color:#f1f1f1
+}
+
+h2{
+    text-align: center;
+    padding: 50px;
+
+}
+
+.services p{
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 
 footer{
     background-color: #001b40;
