@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+
 
 /* Paleta de  Cores : #001b40 (Azul escuro), #e6b22d(Amarelo)  */
 
+/*  Logo e menu*/
 header{
     background-color: #001b40;
     display: flex;
@@ -69,7 +71,8 @@ li .drop{
 .drop:hover .dropdown {
     display: block;
 }
-  
+
+/*  Seção com informações sobre o advogado*/
 h1{
     padding: 1rem;
     text-align: center;
@@ -77,49 +80,180 @@ h1{
 
 .aboutMe{
     display: flex;
-    justify-content: space-around;
     align-items:center;
     padding: 1rem;
-    margin-left: 1rem;
+    gap:50px;
+    flex-direction: row-reverse;
+    margin: 100px 0 100px 0;
 }
 
 p{
     text-align: justify;
+    line-height: 2rem;
+    width: 95%;
 }
 
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.services{
-    background-color: #e6b22d;
-    width: 300px; 
-    height: 400px;
-    text-align: center;   
-    border-radius: 10px;
-}
-
-.services:hover{
-    background-color:#f1f1f1
+.imageAboutUs img{
+    border: solid 10px #001b40;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
 }
 
 h2{
     text-align: center;
-    padding: 50px;
-
+    padding: 20px 20px;
+    font-size: 50px;
 }
 
-.services p{
-    line-height: 1.5;
+#title__servicos{
+    text-align: center;
+    padding: 20px 20px;
+    background-color: #001b40;
+    color: white;
+    font-size: 50px;
+}
+
+/*  Seção com informações dos Serviços /Cards */
+.servicos{
+    display: flex;
+    min-height: 80vh;
+    justify-content:space-around;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: #001b40;
+}
+.container{
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container__card{
+    width: 250px;
+    height: 280px;
+    background-color: #e6b22d;
+    border-radius: 16px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.container__card:hover{
+    height: 320px;
+}
+
+.container :hover{
+    background-color: lightgoldenrodyellow ;
+}
+
+
+.container__title{
+    text-align: center;
+    
+    
+}
+
+.container__text p{
+    text-align: center;
+    font-size: 15pt;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+
+.container__text button{
     display: inline-block;
-    vertical-align: middle;
+    padding: 10px 20px;
+    background: linear-gradient(to right,#001b40, #6d8db9) ;
+    border-radius: 20px;
+    font-size: 10pt;
+    padding-top: 16px;
+    text-transform: uppercase;
+    border: 0;
 }
 
+.container__text a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*  Seção com informações de Depoimentos */
+
+.depo__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.depo__cards{
+    display: flex;
+    flex-direction:column;
+    border: solid #001b40 1px;
+    border-radius: 10%;
+    padding: 15px;
+    background-color: #6d8db9;
+}
+
+.depo__cards p{
+    text-align: center;
+    font-weight: 700;
+    color:white;
+    max-height:max-content;
+}
+
+.depo__people{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit:cover;
+    object-position: center top;
+    border: #e6b22d solid 2px;
+}
+
+.depo__star{
+    width: 200px;
+}
+
+/*  Seção com informações de Localização */
+
+iframe{
+   display: flex;
+   justify-content:center;
+   margin: auto;
+   border-radius: 16px;
+}
+
+/*  Seção com Formulário de contato */
+
+
+
+/*  Seção com informações do Rodapé */
 
 footer{
+    display: flex;
+    justify-content: center;
     background-color: #001b40;
+    text-align: center;
+    color: white;
    
 }
 
+/* Responsividade
+
+@media screen and (max-width: 600px) {
+    .nav a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+@media screen and (max-width:600px) {
+    .textAboutUs .imageAboutUs{
+        display:inline-block;
+        flex-direction:row;
+    }
+}
+*/

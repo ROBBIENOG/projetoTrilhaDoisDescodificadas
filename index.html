@@ -2,15 +2,20 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content=""> <!-- 140 caracteres-->
-    <meta name="keywords" content=""> <!-- -->
+    <meta name="description" content="Escritório de advocacia especializado em direito de trânsito. Atuamos na defesa de multas e penalidades administrativas, na revisão de processos de habilitação ou no acompanhamento de processos judiciais."> <!-- 140 caracteres-->
+    <meta name="keywords" content="direito de trânsito, multas, CNH, Lei Seca, infrações"> <!-- -->
     <meta name="author" content="Roberta Nogueira">
     <meta name="reply-to" content="robertapcnog@gmail.com">
     <meta name="robots" content="index,follow">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trilha 2 - Construindo aplicações de Front-End </title>
+    
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap" rel="stylesheet">
+
 </head>
 <body>
      <!-- Cabeçalho -->
@@ -18,7 +23,7 @@
         <img src="./images/Logo.png" width="150" height="150"alt="Logo com o nome do advogado">
         <nav class="nav">
             <ul>
-                <li><a href="#aboutus">SOBRE MIM</a></li>
+                <li><a rel="internal" href="#aboutus">SOBRE MIM</a></li>
                 
                 <li class="drop">
                     <a href="javascript:void(0)" class="droplink">SERVIÇOS</a>
@@ -31,9 +36,9 @@
                     
                 </li>
 
-                <li><a href="#testimony">DEPOIMENTOS</a></li>
-                <li><a href="#testimony">ONDE ESTAMOS</a></li>
-                <li><a href="#form">CONTATO</a></li>
+                <li><a rel="internal" href="#testimony">DEPOIMENTOS</a></li>
+                <li><a rel="internal" href="#map">ONDE ESTAMOS</a></li>
+                <li><a rel="internal" href="#form">CONTATO</a></li>
             </ul>
         </nav>
     </header>
@@ -42,8 +47,13 @@
      <main>
         <section class="aboutMe" id="aboutus">
             <div class="textAboutUs">
-                <h1>Sobre Mim</h1>
-                <p>Somos um escritório de advocacia especializado em casos de trânsito, com experiência e conhecimento para atuar nas mais diversas situações relacionadas a infrações, acidentes e multas de trânsito. Nosso principal objetivo é defender os direitos e interesses de nossos clientes, buscando sempre a melhor solução para cada caso.
+                <h1>SOBRE MIM</h1>
+                <p>
+                    Somos um escritório de advocacia especializado em casos de trânsito, 
+                    com experiência e conhecimento para atuar nas mais diversas situações 
+                    relacionadas a infrações, acidentes e multas de trânsito. Nosso principal 
+                    objetivo é defender os direitos e interesses de nossos clientes, buscando 
+                    sempre a melhor solução para cada caso.
 
                     Contamos com uma equipe de advogados altamente qualificados e comprometidos com a excelência no atendimento aos clientes. Nosso trabalho é pautado na ética, na transparência e na busca constante pela atualização jurídica, para oferecer sempre as melhores estratégias de defesa.
                     
@@ -53,68 +63,124 @@
                 </p>
             </div>
             <div class="imageAboutUs">
-                <img src="./images/advogado.png" height="500px" width="500">
+                <img src="./images/advogado.png" height="500px" width="500" alt="imagem do advogado de terno e braços cruzados">
             </div>
         </section>
 
-        <section>
-             <h2>Serviços</h2>
-                <div class="container">                
-                    <div class="services">
-                        <h3>CNH</h3>
-                        <p>Regularização de pendências na Carteira Nacional de habilitação</p>
-                    </div>
+        <h2 id="title__servicos">SERVIÇOS</h2>
+        <section class="servicos">
 
-                    <div class="services">
-                        <h3>Lei Seca</h3>
-                        <p>Recursos de Multas Causadas pela Lei Seca</p>
+            <div class="container">
+                <div class="container__card">
+                    <div class="container__title">
+                    <h3>CNH</h3>
                     </div>
-
-                    <div class="services">
-                        <h3>Multas</h3>
-                        <p>Recursos de Multas independente do motivo  </p>
+                    <div class="container__text">
+                    <p>Regularização de pendências na CNH</p>
+                    <button><a href="#">Saiba Mais</a></button>
                     </div>
-
-                    <div class="services">
-                        <h3>Troca de Infrator</h3>
-                        <p>Transferencia de Pontos de penalidades para real infrator</p>
-                    </div>
+                </div>
             </div>
+
+            <div class="container">
+                <div class="container__card">
+                    <div class="container__title">
+                    <h3>Lei Seca</h3>
+                    </div>
+                    <div class="container__text">
+                    <p>Recursos de Multas Causadas pela Lei Seca</p>
+                    <button><a href="#">Saiba Mais</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="container__card">
+                    <div class="container__title">
+                    <h3>Multas</h3>
+                    </div>
+                    <div class="container__text">
+                    <p>Recursos de Multas independente do motivo</p>
+                    <button><a href="#">Saiba Mais</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="container__card">
+                    <div class="container__title">
+                    <h3>Troca de Infrator</h3>
+                    </div>
+                    <div class="container__text">
+                    <p>Transferência de Pontos de penalidades</p>
+                    <button><a href="#">Saiba Mais</a></button>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
 
-        <!--<section id="testimony">
+        <section class="depoimentos" id="testimony">
+            <h2>DEPOIMENTOS</h2>
+            <div class="depo__container">
+                <div class="depo__cards">
+                    <img class="depo__people" src="./images/people three.jpg">
+                    <img class="depo__star" src="./images/stars.png">
+                    <p>Ótimo trabalho!</p>
+                </div>
+            
 
-        </section>-->
+            
+                <div class="depo__cards">
+                    <img class="depo__people" src="./images/peopleone.jpg">
+                    <img class="depo__star" src="./images/stars.png">
+                    <p>Resolução de problemas <br>
+                    de forma eficiente.</p>
+                </div>
+            
+
+            
+                <div class="depo__cards">
+                    <img class="depo__people" src="./images/peopletwo.jpg">
+                    <img class="depo__star" src="./images/stars.png">
+                    <p>Excelente Profissional!</p>
+                
+            </div>
+
+        </section>
 
         <!--<section id="video">
 
         </section>-->
 
-        <section id="map">
-            <h2>Onde Estamos?</h2>
+        <section class="map__container" id="map">
+            <h2>ONDE ESTAMOS?</h2>
+            <div class="map__frame">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.109527347067!2d-43.45124558560689!3d-22.761316238417354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x996711dd0ce49f%3A0xf2ade5a3d49448d0!2sR.%20Cel.%20Bernardino%20de%20Melo%20-%20Centro%2C%20Nova%20Igua%C3%A7u%20-%20RJ%2C%2026557-710!5e0!3m2!1spt-BR!2sbr!4v1681147540296!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </section>
 
         <section id="form">
             <a name="formulario"><h2>Ficou com alguma dúvida?</h2></a>
             <div>ENVIE-NOS UMA MENSAGEM</div>
-            <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-                <label for="message">Mensagem:</label>
-                <textarea name="message" rows="4" placeholder="Digite sua mensagem aqui..."></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-
+            <div>
+                <form>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <label for="message">Mensagem:</label>
+                    <textarea name="message" rows="4" placeholder="Digite sua mensagem aqui..."></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
         </section>
     </main>
 
      <!-- Rodapé -->
     <footer>
-        <p id=textFooter>Criado por Roberta Nogueira</p>
+        <p id=textFooter>Criado por Roberta Nogueira <a href="https://github.com/ROBBIENOG">Portifólio</a></p>
     </footer>
     <script src="script.js"></script>
 </body>
