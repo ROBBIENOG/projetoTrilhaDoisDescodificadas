@@ -87,7 +87,7 @@ h1{
     margin: 100px 0 100px 0;
 }
 
-p{
+.textAboutUs p{
     text-align: justify;
     line-height: 2rem;
     width: 95%;
@@ -180,6 +180,10 @@ h2{
 
 /*  Seção com informações de Depoimentos */
 
+.depoimentos{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
 .depo__container{
     display: flex;
     justify-content: space-around;
@@ -226,6 +230,10 @@ iframe{
    border-radius: 16px;
 }
 
+.map__container{
+    padding: 70px;
+}
+
 /*  Seção com Formulário de contato */
 
 
@@ -233,12 +241,14 @@ iframe{
 /*  Seção com informações do Rodapé */
 
 footer{
-    display: flex;
-    justify-content: center;
     background-color: #001b40;
     text-align: center;
     color: white;
-   
+      
+}
+
+footer a{
+    text-decoration: none;
 }
 
 /* Responsividade

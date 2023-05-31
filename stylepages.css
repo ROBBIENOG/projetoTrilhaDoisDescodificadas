@@ -1,0 +1,47 @@
+/* Paleta de  Cores : #001b40 (Azul escuro), #e6b22d(Amarelo)  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #001b40;
+}
+
+main{ 
+    margin: 50px ;
+    background-color: #e6b22d;
+    padding-bottom: 50px;
+    margin-left: 25%;
+    padding-left: 20px;
+    max-width: 600px;
+    align-items: center;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+h1{
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer{
+    background-color: #e6b22d;
+    text-align: center;
+
+}

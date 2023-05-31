@@ -11,6 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trilha 2 - Construindo aplicações de Front-End </title>
     
+    <link rel="shortcut icon" type="image/png" href="/images/favicon-32x32.png">
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,10 +30,10 @@
                 <li class="drop">
                     <a href="javascript:void(0)" class="droplink">SERVIÇOS</a>
                     <div class="dropdown">
-                        <a href="#">CNH</a>
-                        <a href="#">LEI SECA</a>
-                        <a href="#">MULTAS</a>
-                        <a href="#">TROCA DE INFRATOR</a>
+                        <a href="./cnh.html">CNH</a>
+                        <a href="./leiSeca.html">LEI SECA</a>
+                        <a href="./multas.html">MULTAS</a>
+                        <a href="./trocaDeInfrator.html">TROCA DE INFRATOR</a>
                     </div>
                     
                 </li>
@@ -45,6 +47,9 @@
 
      <!-- Seção principal -->
      <main>
+        
+        <!-- Seção de apresentação do dono da página -->
+
         <section class="aboutMe" id="aboutus">
             <div class="textAboutUs">
                 <h1>SOBRE MIM</h1>
@@ -53,19 +58,29 @@
                     com experiência e conhecimento para atuar nas mais diversas situações 
                     relacionadas a infrações, acidentes e multas de trânsito. Nosso principal 
                     objetivo é defender os direitos e interesses de nossos clientes, buscando 
-                    sempre a melhor solução para cada caso.
-
-                    Contamos com uma equipe de advogados altamente qualificados e comprometidos com a excelência no atendimento aos clientes. Nosso trabalho é pautado na ética, na transparência e na busca constante pela atualização jurídica, para oferecer sempre as melhores estratégias de defesa.
-                    
-                    Atuamos em todas as esferas do direito de trânsito, seja na defesa de multas e penalidades administrativas, na revisão de processos de habilitação ou no acompanhamento de processos judiciais. Com uma abordagem personalizada e dedicada a cada cliente, buscamos sempre a melhor solução para cada caso, de forma ágil e eficiente.
-                    
-                    Entre em contato conosco para mais informações sobre nossos serviços e como podemos ajudá-lo em questões relacionadas ao direito de trânsito.
+                    sempre a melhor solução para cada caso.<br>
+                    <br>
+                    Contamos com uma equipe de advogados altamente qualificados e comprometidos 
+                    com a excelência no atendimento aos clientes. Nosso trabalho é pautado na ética, 
+                    na transparência e na busca constante pela atualização jurídica, para oferecer 
+                    sempre as melhores estratégias de defesa.<br>
+                    <br>
+                    Atuamos em todas as esferas do direito de trânsito, seja na defesa de 
+                    multas e penalidades administrativas, na revisão de processos de habilitação ou 
+                    no acompanhamento de processos judiciais. Com uma abordagem personalizada e dedicada a cada 
+                    cliente, buscamos sempre a melhor solução para cada caso, de forma ágil e eficiente.<br>
+                    <br>
+                    Entre em contato conosco para mais informações sobre nossos serviços e como podemos 
+                    ajudá-lo em questões relacionadas ao direito de trânsito.<br>
+                    <br>
                 </p>
             </div>
             <div class="imageAboutUs">
                 <img src="./images/advogado.png" height="500px" width="500" alt="imagem do advogado de terno e braços cruzados">
             </div>
         </section>
+
+        <!-- Seção de serviços oferecidos pelo profissional -->
 
         <h2 id="title__servicos">SERVIÇOS</h2>
         <section class="servicos">
@@ -77,7 +92,7 @@
                     </div>
                     <div class="container__text">
                     <p>Regularização de pendências na CNH</p>
-                    <button><a href="#">Saiba Mais</a></button>
+                    <button><a href="./cnh.html">Saiba Mais</a></button>
                     </div>
                 </div>
             </div>
@@ -88,8 +103,8 @@
                     <h3>Lei Seca</h3>
                     </div>
                     <div class="container__text">
-                    <p>Recursos de Multas Causadas pela Lei Seca</p>
-                    <button><a href="#">Saiba Mais</a></button>
+                    <p>Recursos de Multas Lei Seca</p>
+                    <button><a href="./leiSeca.html">Saiba Mais</a></button>
                     </div>
                 </div>
             </div>
@@ -100,8 +115,8 @@
                     <h3>Multas</h3>
                     </div>
                     <div class="container__text">
-                    <p>Recursos de Multas independente do motivo</p>
-                    <button><a href="#">Saiba Mais</a></button>
+                    <p>Recursos de Multas outros motivos</p>
+                    <button><a href="./multas.html">Saiba Mais</a></button>
                     </div>
                 </div>
             </div>
@@ -113,13 +128,14 @@
                     </div>
                     <div class="container__text">
                     <p>Transferência de Pontos de penalidades</p>
-                    <button><a href="#">Saiba Mais</a></button>
+                    <button><a href="trocaDeInfrator.html">Saiba Mais</a></button>
                     </div>
                 </div>
             </div>
 
         </section>
 
+        <!-- Seção com depoimentos de clientes -->
 
         <section class="depoimentos" id="testimony">
             <h2>DEPOIMENTOS</h2>
@@ -135,8 +151,7 @@
                 <div class="depo__cards">
                     <img class="depo__people" src="./images/peopleone.jpg">
                     <img class="depo__star" src="./images/stars.png">
-                    <p>Resolução de problemas <br>
-                    de forma eficiente.</p>
+                    <p>Eficiencia e rapidez.</p>
                 </div>
             
 
@@ -144,7 +159,20 @@
                 <div class="depo__cards">
                     <img class="depo__people" src="./images/peopletwo.jpg">
                     <img class="depo__star" src="./images/stars.png">
+                    <p>Satisfeito com o Trabalho.</p>
+                </div>
+
+                <div class="depo__cards">
+                    <img class="depo__people" src="./images/peopletwo.jpg">
+                    <img class="depo__star" src="./images/stars.png">
                     <p>Excelente Profissional!</p>
+                </div>
+
+                <div class="depo__cards">
+                    <img class="depo__people" src="./images/peopletwo.jpg">
+                    <img class="depo__star" src="./images/stars.png">
+                    <p>Competência e dedicação</p>
+                </div>
                 
             </div>
 
@@ -154,12 +182,16 @@
 
         </section>-->
 
+        <!-- Seção com endereço do escritório -->
+
         <section class="map__container" id="map">
             <h2>ONDE ESTAMOS?</h2>
             <div class="map__frame">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.109527347067!2d-43.45124558560689!3d-22.761316238417354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x996711dd0ce49f%3A0xf2ade5a3d49448d0!2sR.%20Cel.%20Bernardino%20de%20Melo%20-%20Centro%2C%20Nova%20Igua%C3%A7u%20-%20RJ%2C%2026557-710!5e0!3m2!1spt-BR!2sbr!4v1681147540296!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
+
+        <!-- Seção com formulário de contato 
 
         <section id="form">
             <a name="formulario"><h2>Ficou com alguma dúvida?</h2></a>
@@ -175,12 +207,12 @@
                     <button type="submit">Enviar</button>
                 </form>
             </div>
-        </section>
+        </section>-->
     </main>
 
-     <!-- Rodapé -->
+     <!-- Rodapé da página -->
     <footer>
-        <p id=textFooter>Criado por Roberta Nogueira <a href="https://github.com/ROBBIENOG">Portifólio</a></p>
+        <p>Criado por <a href="https://github.com/ROBBIENOG">Roberta Nogueira</a></p>
     </footer>
     <script src="script.js"></script>
 </body>
