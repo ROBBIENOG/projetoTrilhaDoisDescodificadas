@@ -85,7 +85,7 @@
         <h2 id="title__servicos">SERVIÇOS</h2>
         <section class="servicos">
 
-            <div class="container">
+            
                 <div class="container__card">
                     <div class="container__title">
                     <h3>CNH</h3>
@@ -95,9 +95,9 @@
                     <button><a href="./cnh.html">Saiba Mais</a></button>
                     </div>
                 </div>
-            </div>
+            
 
-            <div class="container">
+            
                 <div class="container__card">
                     <div class="container__title">
                     <h3>Lei Seca</h3>
@@ -107,9 +107,9 @@
                     <button><a href="./leiSeca.html">Saiba Mais</a></button>
                     </div>
                 </div>
-            </div>
+            
 
-            <div class="container">
+            
                 <div class="container__card">
                     <div class="container__title">
                     <h3>Multas</h3>
@@ -119,9 +119,9 @@
                     <button><a href="./multas.html">Saiba Mais</a></button>
                     </div>
                 </div>
-            </div>
+            
 
-            <div class="container">
+            
                 <div class="container__card">
                     <div class="container__title">
                     <h3>Troca de Infrator</h3>
@@ -131,7 +131,7 @@
                     <button><a href="trocaDeInfrator.html">Saiba Mais</a></button>
                     </div>
                 </div>
-            </div>
+            
 
         </section>
 
@@ -141,40 +141,58 @@
             <h2>DEPOIMENTOS</h2>
             <div class="depo__container">
                 <div class="depo__cards">
+                    <div class="depo__img">
                     <img class="depo__people" src="./images/people three.jpg">
                     <img class="depo__star" src="./images/stars.png">
-                    <p>Ótimo trabalho!</p>
+                    </div>
+                    <div>
+                    <p class="numbercaractere">Ótimo trabalho!</p>  <!--limitando número de caracteres -->
+                    </div>
                 </div>
-            
 
             
                 <div class="depo__cards">
+                    <div class="depo__img">
                     <img class="depo__people" src="./images/peopleone.jpg">
                     <img class="depo__star" src="./images/stars.png">
-                    <p>Eficiencia e rapidez.</p>
+                    </div>
+                    <div>
+                    <p class="numbercaractere">Eficiência e rapidez </p>
+                    </div>
                 </div>
-            
-
-            
+         
                 <div class="depo__cards">
+                    <div class="depo__img">
                     <img class="depo__people" src="./images/peopletwo.jpg">
                     <img class="depo__star" src="./images/stars.png">
-                    <p>Satisfeito com o Trabalho.</p>
+                    </div>
+                    <div>
+                    <p class="numbercaractere">Satisfeito com o Trabalho</p>
+                    </div>
                 </div>
 
                 <div class="depo__cards">
-                    <img class="depo__people" src="./images/peopletwo.jpg">
+                    <div class="depo__img">
+                    <img class="depo__people" src="./images/peoplefour.jpg">
                     <img class="depo__star" src="./images/stars.png">
-                    <p>Excelente Profissional!</p>
+                    </div>
+                    <div>
+                    <p class="numbercaractere">Excelente profissional</p>
+                    </div>
                 </div>
 
                 <div class="depo__cards">
-                    <img class="depo__people" src="./images/peopletwo.jpg">
+                    <div class="depo__img">
+                    <img class="depo__people" src="./images/peoplefive.jpg">
                     <img class="depo__star" src="./images/stars.png">
-                    <p>Competência e dedicação</p>
+                    </div>
+                    <div>
+                    <p class="numbercaractere">Profissional impecável</p>
+                    </div>
                 </div>
-                
+           
             </div>
+            
 
         </section>
 
@@ -191,24 +209,43 @@
             </div>
         </section>
 
-        <!-- Seção com formulário de contato 
+        <!-- Seção com formulário de contato -->
 
-        <section id="form">
-            <a name="formulario"><h2>Ficou com alguma dúvida?</h2></a>
-            <div>ENVIE-NOS UMA MENSAGEM</div>
-            <div>
-                <form>
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email">
-                    <label for="message">Mensagem:</label>
-                    <textarea name="message" rows="4" placeholder="Digite sua mensagem aqui..."></textarea>
-                    <button type="submit">Enviar</button>
-                </form>
+        <h2>Ficou com alguma dúvida?</h2>
+
+        <section class="form__container">
+            
+
+            <div class="info">
+                <p class="formulario__itens">emailficticio@mail.com</p>
+                
+                <img class="formulario__itens" src="/images/iconmonstr-instagram-14.svg">
+                <img class="formulario__itens" src="/images/iconmonstr-youtube-4.svg">
             </div>
-        </section>-->
+
+            <div class="form">
+                <div>ENVIE-NOS UMA MENSAGEM</div>
+                <div class="">
+                    <form>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome"><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email"><br>
+                        <label for="message">Mensagem:</label>
+                        <textarea name="message" rows="4" placeholder="Digite sua mensagem aqui..."></textarea><br>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            
+        </section>
     </main>
+    
+    <div>
+    <a href="https://api.whatsapp.com/send?phone=5521982871014" target="_blank" class="whatsapp-button">
+        <img  src="/images/iconmonstr-whatsapp-second.svg" alt="WhatsApp Icon">
+    </a>
+    </div>
 
      <!-- Rodapé da página -->
     <footer>

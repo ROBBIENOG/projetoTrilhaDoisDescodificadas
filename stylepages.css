@@ -40,6 +40,32 @@ header{
     align-items: center;
 }
 
+/* Estilizando botão para ir para cima na página*/
+
+#btn-voltar-topo {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+  }
+  
+  #btn-voltar-topo:hover {
+    opacity: 1;
+  }
+  
+/* Estilizando botão para ir para cima na página*/ 
+
 footer{
     background-color: #e6b22d;
     text-align: center;

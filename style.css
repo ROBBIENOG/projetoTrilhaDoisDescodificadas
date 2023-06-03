@@ -117,12 +117,13 @@ h2{
 /*  Seção com informações dos Serviços /Cards */
 .servicos{
     display: flex;
-    min-height: 80vh;
+    min-height: 90vh;
     justify-content:space-around;
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
     background-color: #001b40;
+    padding: 50px;
 }
 .container{
     max-width: 800px;
@@ -175,22 +176,29 @@ h2{
 .container__text a{
     text-decoration: none;
     color: white;
+    background: none;
+    
 }
 
 
 /*  Seção com informações de Depoimentos */
 
 .depoimentos{
-    margin-top: 60px;
-    margin-bottom: 60px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    background-color: #e6b22d;
 }
+
 .depo__container{
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     gap: 15px;
+    height: 500px;
+    
 }
+
 
 .depo__cards{
     display: flex;
@@ -201,11 +209,20 @@ h2{
     background-color: #6d8db9;
 }
 
+
+.depo__img{
+    display:flex;
+    flex-direction: column;
+
+}
+
 .depo__cards p{
     text-align: center;
     font-weight: 700;
     color:white;
-    max-height:max-content;
+    max-height:50px;
+    width: 200px;
+    
 }
 
 .depo__people{
@@ -235,6 +252,72 @@ iframe{
 }
 
 /*  Seção com Formulário de contato */
+
+.form__container{
+    display: flex;
+}
+
+.info {
+    flex: 1;
+    margin-right: 2px;
+  }
+
+  .info img {
+   
+  }
+
+  
+.form-container {
+    flex: 2;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+
+/*  Seção com Botão do Whatsapp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
 
 
 
