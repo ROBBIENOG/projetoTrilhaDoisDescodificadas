@@ -254,33 +254,40 @@ iframe{
 /*  Seção com Formulário de contato */
 
 .form__container{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px 10px;
 }
 
 .info {
-    flex: 1;
-    margin-right: 2px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
+    
   }
 
   .info img {
-   
-  }
-
-  
-.form-container {
-    flex: 2;
+    display: grid;
+    width:60%;
+    height: 60%;
+    object-fit:initial;
+       
   }
   
   h2 {
     color: #333;
+    
   }
   
   form {
+    width: 400px;
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
+
   
   label {
     display: block;
@@ -298,7 +305,7 @@ iframe{
   }
   
   button {
-    background-color: #4caf50;
+    background-color: #001b40;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -307,15 +314,23 @@ iframe{
   }
   
   button:hover {
-    background-color: #45a049;
+    background-color: #e6b22d;
   }
 
-/*  Seção com Botão do Whatsapp */
+/*  Botão do inicio */
+
+.inicio {
+    position: fixed;
+    bottom: 20%; 
+    right:3%;
+}
+
+/*  Botão do Whatsapp */
 .whatsapp-button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 9999;
+    
 }
 
 
