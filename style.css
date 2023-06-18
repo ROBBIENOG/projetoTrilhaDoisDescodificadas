@@ -349,7 +349,7 @@ footer a{
     text-decoration: none;
 }
 
-/* Responsividade
+/* Responsividade*/
 
 @media screen and (max-width: 600px) {
     .nav a {
@@ -364,4 +364,9 @@ footer a{
         flex-direction:row;
     }
 }
-*/
+
+@media screen and (min-width:380px) {
+    .depo__container{
+        height: fit-content;
+    }
+}
