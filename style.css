@@ -351,22 +351,72 @@ footer a{
 
 /* Responsividade*/
 
-@media screen and (max-width: 600px) {
-    .nav a {
-      float: none;
-      width: 100%;
-    }
-  }
 
-@media screen and (max-width:600px) {
-    .textAboutUs .imageAboutUs{
-        display:inline-block;
-        flex-direction:row;
+@media screen and (min-width:280px) {
+    #title__servicos, h2 {
+        font-size: 2rem;
     }
-}
+    .aboutMe{
+        display: inline-block;
+        flex-direction: row-reverse;
+    }
+    
+    .imageAboutUs .textAboutUs{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
 
-@media screen and (min-width:380px) {
+    }
     .depo__container{
         height: fit-content;
     }
+
+    iframe{
+        width:100%;
+    }
+    .form__container{
+        display: inline-block;
+        flex-direction: row;
+        gap:50px;
+    }
+
+    .formulario__itens{
+        width: 150px;
+        height: 150px;
+    }
+
+    
 }
+
+@media screen and (min-width:600px) {
+    .aboutMe {
+        display: flex;
+        flex-direction: row-reverse;
+        
+    }
+    .form__container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imageAboutUs{
+        align-items: center;
+        justify-content: center;
+    }
+    .form__container{
+        gap: 50px;
+    }
+    
+     
+}
+
+
+@media screen and (max-width: 600px) {
+    .textAboutUs{
+        text-align: justify;
+        
+    }
+  }
